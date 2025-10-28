@@ -1,5 +1,5 @@
 [![Python package](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml)
-![](https://github.com/daddy-knows-best/rstrip/blob/main/pybadge.svg)<img src="./pybadge.svg">
+![](https://github.com/daddy-knows-best/rstrip/blob/main/pybadge.svg)
 
 # rstrip
 
