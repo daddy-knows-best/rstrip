@@ -1,6 +1,6 @@
 # rstrip
 
-trim the spaces at the end of line that can replace the below `sed` command:
+trim the trailing spaces at the end of line that can replace the below `sed` command:
 
 ```
 $ echo -en "Hello World\r\n" | gsed -z -E 's/[[:space:]]*$//' | hexdump -C
@@ -18,4 +18,6 @@ $ echo -ne "Hello World\r\n" | ./rstrip | hexdump -C
 $
 ```
 
-The reason is that sed/bash under various UNIX/Linux/macOS behaves slightly differently; that makes difficult to expect the consistent rstrip behavior from the command.
+The reason is that sed under various shell such as bash/zsh and UNIX/Linux/macOS behaves slightly differently; that makes difficult to expect the consistent rstrip behavior from the command, not to mention to remember those options and extended regular expression patterns.
+
+I decided to write a simple `rstrip` command that I can use in command line.
