@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+#########1#########2#########3#########4#########5#########6#########7#########8
+#
+#########1#########2#########3#########4#########5#########6#########7#########8
+# History:
+# 10/26/25 v0.1: the initial release
+#########1#########2#########3#########4#########5#########6#########7#########8
+
+import sys
+
+
+def print_help():
+    help_message = """
+Usage: echo -en "Hello World\r\n" | rstrip
+
+Arguments:
+    <filename>  The name of the file to process, or None
+
+Options:
+    -h, --help  Show this help message and exit.
+"""
+
+    print(help_message)
+
+
+def trim_trailing_spaces(filename=None):
+    try:
+        if filename:
+            with open(filename, "r") as file:
+                lines = file
+        else:
+            lines = sys.stdin
+
+        string_rstrip = str()
+        for line in lines:
+            string_rstrip += line.rstrip()
+
+    except Exception as e:
+        print(f"Error: {e}")
+        exit(1)
+
+    return string_rstrip
+
+
+def main():
+    if len(sys.argv) > 1:
+        arg = sys.argv[1]
+        if arg in ("-h", "--help"):
+            print_help()
+            return
+        else:
+            string_rstrip = trim_trailing_spaces(arg)
+    else:
+        string_rstrip = trim_trailing_spaces()
+
+    print(string_rstrip, end="")
+
+
+if __name__ == "__main__":
+    main()
