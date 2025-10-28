@@ -21,3 +21,21 @@ $
 The reason is that sed under various shell such as bash/zsh and UNIX/Linux/macOS behaves slightly differently; that makes difficult to expect the consistent rstrip behavior from the command, not to mention to remember those options and extended regular expression patterns.
 
 I decided to write a simple `rstrip` command that I can use in command line.
+
+```
+$ ./rstrip --help
+
+Usage: echo -en "Hello World\r\n" | rstrip
+
+Arguments:
+    <filename>  The name of the file to process, or None
+
+Options:
+    -h, --help  Show this help message and exit.
+
+$
+```
+
+# History
+
+10/27/25 v0.1.0

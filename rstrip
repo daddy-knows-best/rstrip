@@ -11,7 +11,7 @@ import sys
 
 def print_help():
     help_message = """
-Usage: echo -en "Hello World\r\n" | rstrip
+Usage: echo -en "Hello World\\r\\n" | rstrip
 
 Arguments:
     <filename>  The name of the file to process, or None
