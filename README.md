@@ -1,3 +1,4 @@
+[![Python package](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml)
 # rstrip
 
 trim the trailing spaces at the end of line that can replace the below `sed` command:
