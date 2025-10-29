@@ -22,7 +22,7 @@ repos:
     hooks:
     -   id: pytest
         name: pytest
-        entry: ./.venv/bin/pytest # Adjust path to your pytest executable if needed
+        entry: ./.venv/bin/pytest --cov=rstrip --cov-report=html --cov-report=term-missing # Adjust path to your pytest executable if needed
         language: system
         types: [python]
         pass_filenames: false
