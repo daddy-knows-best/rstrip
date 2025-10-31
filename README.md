@@ -1,4 +1,5 @@
 [![Python package](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml)
+[![Release Python Package](https://github.com/daddy-knows-best/rstrip/actions/workflows/release.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/release.yml)
 ![](https://github.com/daddy-knows-best/rstrip/blob/main/pybadge.svg)
 
 # rstrip
