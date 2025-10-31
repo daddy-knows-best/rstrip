@@ -46,10 +46,6 @@ $
 macbookair:tests seungyeop$ uv init test_rstrip
 Initialized project `test-rstrip` at `/Users/seungyeop/tests/test_rstrip`
 macbookair:tests seungyeop$ cd test_rstrip
-macbookair:test_rstrip seungyeop$ wget rstrip-0.5.0-py3-none-any.whl
---2025-10-31 10:28:59--  http://rstrip-0.5.0-py3-none-any.whl/
-Resolving rstrip-0.5.0-py3-none-any.whl (rstrip-0.5.0-py3-none-any.whl)... failed: nodename nor servname provided, or not known.
-wget: unable to resolve host address ‘rstrip-0.5.0-py3-none-any.whl’
 macbookair:test_rstrip seungyeop$ wget https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
 --2025-10-31 10:30:06--  https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
 Resolving github.com (github.com)... 140.82.114.3
