@@ -1,7 +1,10 @@
 [project]
 name = "rstrip"
-version = "0.1.1"
-description = "Add your description here"
+version = "0.2.0"
+description = "command line tool: rstrip"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.9"
 dependencies = []
+
+[project.scripts]
+rstrip = "rstrip.rstrip:main"

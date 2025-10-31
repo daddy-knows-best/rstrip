@@ -2,20 +2,21 @@
 import io
 import sys
 import os
-import runpy
 import pytest
-from pathlib import Path
-from types import SimpleNamespace
+import rstrip.rstrip as rstrip
 
-
-def _load_rstrip_module():
-    repo_root = Path(__file__).resolve().parents[1]
-    module_path = repo_root / "rstrip"
-    mod_dict = runpy.run_path(str(module_path))
-    return SimpleNamespace(**mod_dict)
-
-
-rstrip = _load_rstrip_module()
+# from pathlib import Path
+# from types import SimpleNamespace
+#
+#
+# def _load_rstrip_module():
+#     repo_root = Path(__file__).resolve().parents[1]
+#     module_path = repo_root / "rstrip"
+#     mod_dict = runpy.run_path(str(module_path))
+#     return SimpleNamespace(**mod_dict)
+#
+#
+# rstrip = _load_rstrip_module()
 
 
 def test_trim_from_stdin(monkeypatch):

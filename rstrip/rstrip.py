@@ -2,10 +2,6 @@
 #########1#########2#########3#########4#########5#########6#########7#########8
 #
 #########1#########2#########3#########4#########5#########6#########7#########8
-# History:
-# 10/28/25 v0.1.1: fix: change exit code on file not found
-# 10/26/25 v0.1.0: the initial release
-#########1#########2#########3#########4#########5#########6#########7#########8
 
 import sys
 
@@ -25,6 +21,9 @@ Options:
 
 
 def trim_trailing_spaces(filename=None):
+    """
+    trim trailing spaces
+    """
     try:
         if filename:
             with open(filename, "r") as file:
