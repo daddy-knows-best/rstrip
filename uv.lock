@@ -1,8 +1,8 @@
 version = 1
 revision = 3
-requires-python = ">=3.14"
+requires-python = ">=3.9"
 
 [[package]]
 name = "rstrip"
-version = "0.2.0"
+version = "0.3.0"
 source = { virtual = "." }
