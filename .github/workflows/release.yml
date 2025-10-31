@@ -13,7 +13,7 @@
         - name: Set up Python
           uses: actions/setup-python@v5
           with:
-            python-version: ["3.9","3.10","3.11","3.12","3.13","3.14"] # Specify your Python version
+            python-version: '3.9' # Specify your Python version
         - name: Install build dependencies
           run: pip install build twine
         - name: Build sdist and wheel
