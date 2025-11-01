@@ -39,6 +39,11 @@ def trim_trailing_spaces(filename=None):
 
 
 def line_strip(file):
+    """
+    return the string after rstrip
+
+    Python interpreter will raise a MemoryError if the size of string_strip grows beyond the limit.
+    """
     string_rstrip = str()
     for line in file:
         string_rstrip += line.rstrip()
