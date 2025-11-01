@@ -63,7 +63,7 @@ rstrip:
 (test_rstrip) $ uv pip install -i https://test.pypi.org/simple/ rstrip
 Resolved 1 package in 77ms
 Installed 1 package in 5ms
- + rstrip==0.6.2
+ + rstrip==0.7.0
 (test_rstrip) $ whereis rstrip
 rstrip: /Users/seungyeop/tests/test_rstrip/.venv/bin/rstrip
 (test_rstrip) $ echo -ne "Hello World\r\n" | rstrip | hexdump -C
