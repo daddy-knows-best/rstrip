@@ -50,10 +50,10 @@ $
 # Installation and How to use
 
 ```
-macbookair:tests seungyeop$ uv init test_rstrip
+$ uv init test_rstrip
 Initialized project `test-rstrip` at `/Users/seungyeop/tests/test_rstrip`
-macbookair:tests seungyeop$ cd test_rstrip
-macbookair:test_rstrip seungyeop$ wget https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
+$ cd test_rstrip
+$ wget https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
 --2025-10-31 10:30:06--  https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
 Resolving github.com (github.com)... 140.82.114.3
 Connecting to github.com (github.com)|140.82.114.3|:443... connected.
@@ -70,26 +70,26 @@ rstrip-0.5.0-py3-none-any.whl                      100%[========================
 
 2025-10-31 10:30:06 (9.75 MB/s) - ‘rstrip-0.5.0-py3-none-any.whl’ saved [3365/3365]
 
-macbookair:test_rstrip seungyeop$ ls
+$ ls
 main.py				pyproject.toml			README.md			rstrip-0.5.0-py3-none-any.whl
-macbookair:test_rstrip seungyeop$ uv venv
+$ uv venv
 Using CPython 3.14.0
 Creating virtual environment at: .venv
 Activate with: source .venv/bin/activate
-macbookair:test_rstrip seungyeop$ source .venv/bin/activate
-(test_rstrip) macbookair:test_rstrip seungyeop$ whereis rstrip
+$ source .venv/bin/activate
+(test_rstrip) $ whereis rstrip
 rstrip:
-(test_rstrip) macbookair:test_rstrip seungyeop$ uv pip install ./rstrip-0.5.0-py3-none-any.whl
+(test_rstrip) $ uv pip install ./rstrip-0.5.0-py3-none-any.whl
 Resolved 1 package in 7ms
 Prepared 1 package in 3ms
 Installed 1 package in 3ms
  + rstrip==0.5.0 (from file:///Users/seungyeop/tests/test_rstrip/rstrip-0.5.0-py3-none-any.whl)
-(test_rstrip) macbookair:test_rstrip seungyeop$ whereis rstrip
+(test_rstrip) $ whereis rstrip
 rstrip: /Users/seungyeop/tests/test_rstrip/.venv/bin/rstrip
-(test_rstrip) macbookair:test_rstrip seungyeop$ echo -ne "Hello World\r\n" | rstrip | hexdump -C
+(test_rstrip) $ echo -ne "Hello World\r\n" | rstrip | hexdump -C
 00000000  48 65 6c 6c 6f 20 57 6f  72 6c 64                 |Hello World|
 0000000b
-(test_rstrip) macbookair:test_rstrip seungyeop$
+(test_rstrip) $
 ```
 
 # History
