@@ -74,8 +74,7 @@ rstrip: /Users/seungyeop/tests/test_rstrip/.venv/bin/rstrip
 
 # History
 
-11/01/25 v0.7.0
-11/01/25 v0.6.2\
+11/01/25 v0.7.0, v0.6.2\
 10/31/25 v0.5.0\
 10/29/25~10/30/25 various pre-releases 0.2.0, 0.3.0, 0.4.0\
 10/28/25 v0.1.1\
