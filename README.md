@@ -53,25 +53,6 @@ $
 $ uv init test_rstrip
 Initialized project `test-rstrip` at `/Users/seungyeop/tests/test_rstrip`
 $ cd test_rstrip
-$ wget https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
---2025-10-31 10:30:06--  https://github.com/daddy-knows-best/rstrip/releases/download/v0.5.0/rstrip-0.5.0-py3-none-any.whl
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://release-assets.githubusercontent.com/github-production-release-asset/1084615457/f2547e42-2136-49e2-844c-620182a35e3b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-31T16%3A19%3A48Z&rscd=attachment%3B+filename%3Drstrip-0.5.0-py3-none-any.whl&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-31T15%3A19%3A05Z&ske=2025-10-31T16%3A19%3A48Z&sks=b&skv=2018-11-09&sig=fMKewEx%2BcF1r1Gno24oEe1wMZ9HZtx%2BNsukf0ecd4%2Fo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2MTkyNDkwNiwibmJmIjoxNzYxOTI0NjA2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.FU2p7kAlwzFyjC3b3VwSSL8FcBSxbpu9pv-28Y0pv1Y&response-content-disposition=attachment%3B%20filename%3Drstrip-0.5.0-py3-none-any.whl&response-content-type=application%2Foctet-stream [following]
---2025-10-31 10:30:06--  https://release-assets.githubusercontent.com/github-production-release-asset/1084615457/f2547e42-2136-49e2-844c-620182a35e3b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-31T16%3A19%3A48Z&rscd=attachment%3B+filename%3Drstrip-0.5.0-py3-none-any.whl&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-31T15%3A19%3A05Z&ske=2025-10-31T16%3A19%3A48Z&sks=b&skv=2018-11-09&sig=fMKewEx%2BcF1r1Gno24oEe1wMZ9HZtx%2BNsukf0ecd4%2Fo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2MTkyNDkwNiwibmJmIjoxNzYxOTI0NjA2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.FU2p7kAlwzFyjC3b3VwSSL8FcBSxbpu9pv-28Y0pv1Y&response-content-disposition=attachment%3B%20filename%3Drstrip-0.5.0-py3-none-any.whl&response-content-type=application%2Foctet-stream
-Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 3365 (3.3K) [application/octet-stream]
-Saving to: ‘rstrip-0.5.0-py3-none-any.whl’
-
-rstrip-0.5.0-py3-none-any.whl                      100%[==============================================================================================================>]   3.29K  --.-KB/s    in 0s
-
-2025-10-31 10:30:06 (9.75 MB/s) - ‘rstrip-0.5.0-py3-none-any.whl’ saved [3365/3365]
-
-$ ls
-main.py				pyproject.toml			README.md			rstrip-0.5.0-py3-none-any.whl
 $ uv venv
 Using CPython 3.14.0
 Creating virtual environment at: .venv
@@ -79,11 +60,10 @@ Activate with: source .venv/bin/activate
 $ source .venv/bin/activate
 (test_rstrip) $ whereis rstrip
 rstrip:
-(test_rstrip) $ uv pip install ./rstrip-0.5.0-py3-none-any.whl
-Resolved 1 package in 7ms
-Prepared 1 package in 3ms
-Installed 1 package in 3ms
- + rstrip==0.5.0 (from file:///Users/seungyeop/tests/test_rstrip/rstrip-0.5.0-py3-none-any.whl)
+(test_rstrip) $ uv pip install -i https://test.pypi.org/simple/ rstrip
+Resolved 1 package in 77ms
+Installed 1 package in 5ms
+ + rstrip==0.6.2
 (test_rstrip) $ whereis rstrip
 rstrip: /Users/seungyeop/tests/test_rstrip/.venv/bin/rstrip
 (test_rstrip) $ echo -ne "Hello World\r\n" | rstrip | hexdump -C
@@ -94,6 +74,7 @@ rstrip: /Users/seungyeop/tests/test_rstrip/.venv/bin/rstrip
 
 # History
 
+11/01/25 v0.7.0
 11/01/25 v0.6.2\
 10/31/25 v0.5.0\
 10/29/25~10/30/25 various pre-releases 0.2.0, 0.3.0, 0.4.0\
