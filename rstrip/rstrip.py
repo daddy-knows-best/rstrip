@@ -27,22 +27,14 @@ def trim_trailing_spaces(filename=None):
     try:
         if filename:
             with open(filename, "r") as file:
-                line_strip(file)
+                print("".join([line.rstrip() for line in file]), end="")
+
         else:
-            line_strip(sys.stdin)
+            print("".join([line.rstrip() for line in sys.stdin]), end="")
 
     except Exception as e:
         print(f"Error: {e}")
         exit(1)
-
-
-def line_strip(file):
-    """
-    rstrip the string
-
-    """
-    for line in file:
-        print(line.rstrip(), end="")
 
 
 def main():
