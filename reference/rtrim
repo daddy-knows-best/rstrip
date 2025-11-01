@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import sys
+
+print("".join(line.rstrip() for line in sys.stdin), end="")
+
+# if len(sys.argv) > 1:
+#     with open(sys.argv[1], "r") as file:
+#         list_string = [line.rstrip() for line in file]
+# else:
+#     list_string = [line.rstrip() for line in sys.stdin]
+#
+# string_strip = "".join(list_string)
+# print(string_strip, end="")
