@@ -1,6 +1,7 @@
 [![Python package](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/python-package.yml)
 [![Release Python Package](https://github.com/daddy-knows-best/rstrip/actions/workflows/release.yml/badge.svg)](https://github.com/daddy-knows-best/rstrip/actions/workflows/release.yml)
 ![](https://github.com/daddy-knows-best/rstrip/blob/main/pybadge.svg)
+[![An image of @seungyeop's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/seungyeop)](https://holopin.io/@seungyeop)
 
 # rstrip
 
